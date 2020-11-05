@@ -60,7 +60,6 @@ function setup() {
     //Clear_id = setTimeout(finish,15000)
 }
 //フレーム数から秒数をカウント：方法１
-//
 
 //マウス位置で四角を動かす
 function mouseDragged() {
