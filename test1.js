@@ -4,38 +4,20 @@ var resultDivided = document.getElementById("GAMEOVER")
 //四角のマウス位置を設定
 var rectx ;
 var recty ;
-
-var blockX = 5;
-var blockY = 30;
-
+//ゲーム結果を表示する位置
 var x = 130;
 var y = 300;
-
+//ゲーム時間の初期設定と時間設定
 var framcount;
 var framtime = 900;
-
+//勝ちの表記と負けの表記が同時に出てこないようにする
 var clearWin = 1;
 
 //"GAME OVER"を出現させる
 function Lose(){
-  /*
-  const result = document.createElement('h3');
-  result.innerText = 'GAME OVER';
-  //result.style.cssText="color:blue; margin-right:100px; margin-left:100px;"
-  result.style.cssText="color:blue;";
-  resultDivided.appendChild(result);
-  */
  var ctx = document.getElementById('defaultCanvas0').getContext('2d');
   ctx.font = "40px serif";
   ctx.fillText("GAME OVER", x , y );
-}
-//"YOUR WIN"を出現させる
-function finish(){
-  /*
-  const result = document.createElement('h3');
-  result.innerText = 'YOUR WIN';
-  resultDivided.appendChild(result);
-  */
 }
 
 function setup() {
@@ -56,10 +38,7 @@ function setup() {
     TargetplaceY = 100;
     //的の速度
     TargetspeedX = 4;
-    //一定時間経過（ゲーム終了）でfinish()を行う
-    //Clear_id = setTimeout(finish,15000)
 }
-//フレーム数から秒数をカウント：方法１
 
 //マウス位置で四角を動かす
 function mouseDragged() {
@@ -153,7 +132,6 @@ function draw(){
     noLoop();
     Lose();
     clearWin-1;
-    //clearTimeout(Clear_id);
   }
   //フレームレートの数で時間制限を作る
   framcount++;
