@@ -1,0 +1,19 @@
+body {
+    margin-right: auto;
+    margin-left : auto;
+    background-color: lightblue;
+  }
+canvas {
+    margin-right: auto;
+    margin-left : auto;
+    margin-top: auto;
+    margin-bottom : auto;
+    display: block;
+}
+#GAMEOVER{
+  margin-right: auto;
+    margin-left : auto;
+    margin-top: auto;
+    margin-bottom : auto;
+    display: block;
+}
