@@ -202,3 +202,8 @@ function Pointcounter() {
 //３：ランキング機能の設置
 //４：デザインで遊ぶ
 //リバース中、なんらかのマーク（仕組みも説明）
+
+//canvasをdivに貼り付ける（名前をつける）→canvasを作る
+//githubにディレクトリごとassessmentみたく
+//https://あなたのユーザー名.github.io/〜〜.htmlでgitに上げていればアクセスできる
+//branch mainでは編集する大元であって、ghpagesを作る
